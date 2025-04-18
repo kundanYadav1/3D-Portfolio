@@ -4,6 +4,7 @@ import Button from "../components/Button.jsx";
 import HeroExperience from "../HeroModels/HeroExperience.jsx";
 import { useGSAP } from "@gsap/react";
 import gsap from 'gsap';
+import AnimatedCounter from "../components/AnimatedCounter.jsx";
 
 const Hero = () => {
 useGSAP(()=>{
@@ -70,11 +71,12 @@ useGSAP(()=>{
         </header>
         {/*    Right 3D model*/}
         <figure>
-          <div className="hero-3d-layout">
+          <div className="hero-3d-layout ">
             <HeroExperience />
           </div>
         </figure>
       </div>
+      <AnimatedCounter />
     </section>
   );
 };
